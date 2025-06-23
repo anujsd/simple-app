@@ -5,6 +5,6 @@ files:
     destination: /var/www/html/
 hooks:
   AfterInstall:
-    - location: scripts/reload_nginx.sh
-      timeout: 30
+    - location: scripts/install_and_reload_nginx.sh
+      timeout: 60
       runas: root
